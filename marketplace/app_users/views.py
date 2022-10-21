@@ -3,7 +3,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.views import LogoutView, LoginView
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, UpdateView
-from .models import UserProfile
+from .models import UserProfile, Purchases
 from .forms import RegisterUserForm, AuthUserForm, EditProfileForm
 
 
@@ -47,7 +47,7 @@ class ProfileUpdateView(LoginRequiredMixin, UpdateView):
     def get_context_data(self, **kwargs):
         user_model = self.model.objects.get(username=self.request.user.username)
         kwargs['list_data'] = user_model
-        # kwargs['purchases'] = Purchases.objects.filter(buyer=user_model)
+        kwargs['purchases'] = Purchases.objects.filter(buyer=user_model)
         return super().get_context_data(**kwargs)
 
     def get_form_kwargs(self):

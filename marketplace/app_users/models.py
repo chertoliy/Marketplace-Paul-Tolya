@@ -1,6 +1,7 @@
 from django.contrib.auth.models import AbstractUser, Group
 from django.db import models
 from django.utils.translation import gettext_lazy as _
+from app_market.models import Products
 
 
 class UserProfile(AbstractUser):
@@ -18,3 +19,22 @@ class UserProfile(AbstractUser):
         verbose_name = _("User profile")
         verbose_name_plural = _("User profiles")
         ordering = ['username']
+
+
+class Purchases(models.Model):
+    id = models.AutoField(primary_key=True)
+    buyer = models.ForeignKey(UserProfile, on_delete=models.CASCADE, verbose_name=_("Buyer"),
+                              blank=True, null=True)
+    product = models.ForeignKey(Products, on_delete=models.CASCADE, verbose_name=_("Product"),
+                                blank=True, null=True)
+    create_date = models.DateTimeField(auto_now=True, verbose_name=_("Time of purchase"))
+
+    def __str__(self):
+        return f"{self.product.name} - {self.buyer.username}"
+
+    class Meta:
+        db_table = 'purchases'
+        verbose_name = _("Purchase")
+        verbose_name_plural = _("Purchases")
+        ordering = ['-create_date']
+
