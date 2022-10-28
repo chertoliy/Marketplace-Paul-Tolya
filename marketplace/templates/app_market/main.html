@@ -1,0 +1,273 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru, en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href={% static "css/reset.css" %}>
+    <link rel="stylesheet" href={% static "css/slick.css" %}>
+    <link rel="stylesheet" href={% static "css/main.min.css" %}>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="menu">
+                <a class="geo__link" href="">Tbilisi</a>
+                <a class="logo__link" href="#">
+                    <img class="logo" src="{% static "images/logo.svg" %}" alt="NeoMerc">
+                </a>
+                <div class="menu__search">
+                    <button class="menu__catalog-btn button">Catalog</button>
+                    <input class="menu__search-input" type="text" placeholder="Search products">
+                    <button class="menu__search-btn button">Search</button>
+                </div>
+                <a class="menu__link menu__points-link" href="">
+                    Novo Points
+                </a>
+                <a class="menu__link menu__orders-link" href="">
+                    Orders
+                </a>
+                <a class="menu__link menu__favorites-link" href="">
+                    Favorites
+                </a>
+                <a class="menu__link menu__cart-link" href="">
+                    Cart
+                </a>
+                <button class="login__btn button">Login</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="landing">
+            <div class="container">
+                <div class="landing__slider slider">
+                    <div class="landing__slider-box">
+                        <div class="landing__slider-left">
+                            <h1 class="landing__slider-heading">The new phones are <br> here take a look.</h1>
+                            <p class="landing__slider-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus morbi turpis.
+                            </p>
+                            <a class="landing__slider-link" href="">
+                                <button class="landing__slider-btn button">Explore</button>
+                            </a>
+                        </div>
+                        <div class="landing__slider-right">
+                            <img class="landing__slider-img" src="{% static "images/slider-img1.png" %}" alt="">
+                        </div>
+                    </div>
+                    <div class="landing__slider-box">
+                        <div class="landing__slider-left">
+                            <h1 class="landing__slider-heading"></h1>
+                            <p class="landing__slider-text"></p>
+                            <a class="landing__slider-link" href="">
+                                <button class="landing__slider-btn button">Explore</button>
+                            </a>
+                        </div>
+                        <div class="landing__slider-right">
+                            <img class="landing__slider-img" src="" alt="">
+                        </div>
+                    </div>
+                    <div class="landing__slider-box">
+                        <div class="landing__slider-left">
+                            <h1 class="landing__slider-heading"></h1>
+                            <p class="landing__slider-text"></p>
+                            <a class="landing__slider-link" href="">
+                                <button class="landing__slider-btn button">Explore</button>
+                            </a>
+                        </div>
+                        <div class="landing__slider-right">
+                            <img class="landing__slider-img"  src="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stores">
+            <div class="container">
+                <div class="stores__box">
+                    <h2 class="stores__heading">Our Partners</h2>
+                    <div class="stores__row">
+                        <a class="stores__item">
+                            <img class="stores__item-img" src="{% static "images/shop-icon.svg"%}" alt="">
+                            <h4 class="stores__item-heading">Lorem ipsum dolor sit amet.</h4>
+                            <p class="stores__item-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus hic eligendi delectus saepe ab placeat?
+                            </p>
+                        </a>
+                        <a class="stores__item">
+                            <img class="stores__item-img" src="{% static "images/shop-icon.svg" %}" alt="">
+                            <h4 class="stores__item-heading">Lorem ipsum dolor sit amet.</h4>
+                            <p class="stores__item-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus hic eligendi delectus saepe ab placeat?
+                            </p>
+                        </a>
+                        <a class="stores__item">
+                            <img class="stores__item-img" src="{% static "images/shop-icon.svg" %}" alt="">
+                            <h4 class="stores__item-heading">Lorem ipsum dolor sit amet.</h4>
+                            <p class="stores__item-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus hic eligendi delectus saepe ab placeat?
+                            </p>
+                        </a>
+                        <a class="stores__item">
+                            <img class="stores__item-img" src="{% static "images/shop-icon.svg" %}" alt="">
+                            <h4 class="stores__item-heading">Lorem ipsum dolor sit amet.</h4>
+                            <p class="stores__item-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus hic eligendi delectus saepe ab placeat?
+                            </p>
+                        </a>
+                        <a class="stores__item">
+                            <img class="stores__item-img" src="{% static "images/shop-icon.svg" %}" alt="">
+                            <h4 class="stores__item-heading">Lorem ipsum dolor sit amet.</h4>
+                            <p class="stores__item-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus hic eligendi delectus saepe ab placeat?
+                            </p>
+                        </a>
+                    </div>
+                    <div class="stores__row">
+                        <a class="stores__item">
+                            <img class="stores__item-img" src="{% static "images/shop-icon.svg" %}" alt="">
+                            <h4 class="stores__item-heading">Lorem ipsum dolor sit amet.</h4>
+                            <p class="stores__item-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus hic eligendi delectus saepe ab placeat?
+                            </p>
+                        </a>
+                        <a class="stores__item">
+                            <img class="stores__item-img" src="{% static "images/shop-icon.svg" %}" alt="">
+                            <h4 class="stores__item-heading">Lorem ipsum dolor sit amet.</h4>
+                            <p class="stores__item-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus hic eligendi delectus saepe ab placeat?
+                            </p>
+                        </a>
+                        <a class="stores__item">
+                            <img class="stores__item-img" src="{% static "images/shop-icon.svg" %}" alt="">
+                            <h4 class="stores__item-heading">Lorem ipsum dolor sit amet.</h4>
+                            <p class="stores__item-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus hic eligendi delectus saepe ab placeat?
+                            </p>
+                        </a>
+                        <a class="stores__item">
+                            <img class="stores__item-img" src="{% static "images/shop-icon.svg" %}" alt="">
+                            <h4 class="stores__item-heading">Lorem ipsum dolor sit amet.</h4>
+                            <p class="stores__item-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus hic eligendi delectus saepe ab placeat?
+                            </p>
+                        </a>
+                        <a class="stores__item">
+                            <img class="stores__item-img" src="{% static "images/shop-icon.svg" %}" alt="">
+                            <h4 class="stores__item-heading">Lorem ipsum dolor sit amet.</h4>
+                            <p class="stores__item-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus hic eligendi delectus saepe ab placeat?
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__app">
+                <div class="footer__app-left">
+                    <h2 class="footer__app-heading">Order in our new app <br> and get bonus boints</h2>
+                    <div class="footer__app-apps">
+                        <a class="footer__app-link" href="">
+                            <img class="footer__app-img" src="{% static "images/app-store.svg" %}" alt="App Store">
+                        </a>
+                        <a class="footer__app-link" href="">
+                            <img class="footer__app-img" src="{% static "images/google-play.svg" %}" alt="Google Play">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__app-center">
+                    <img class="footer__app-phoneimg" src="{% static "images/iphone.svg" %}" alt="phone">
+                </div>
+                <div class="footer__app-right">
+                    <img class="footer__app-qrcode" src="{% static "images/qrcode.svg" %}" alt="QR code">
+                    <p class="footer__app-text">Scan the QR code <br> to download</p>
+                </div>
+            </div>
+            <div class="footer__inner">
+                <div class="footer__box">
+                    <a class="logo__link" href="#">
+                        <img class="logo" src="{% static "images/logo.svg" %}" alt="NeoMerc">
+                    </a>
+                </div>
+                <div class="footer__box">
+                    <h3 class="footer__heading">Our partners</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="">1</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="">2</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="">3</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="">4</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__box">
+                    <h3 class="footer__heading">Company</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="">About</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="">History</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__box">
+                    <h3 class="footer__heading">Support</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="">Contacts</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="">Licensing</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="">Franchise program</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="">B2B</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__box">
+                    <h3 class="footer__heading">Follow Us</h3>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="">Instagram</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="">Facebook</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="">Youtube</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="">Linkedin</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="{% static "js/slick.min.js" %}"></script>
+    <script src="{% static "js/main.js"%}"></script>
+</body>
+
+</html>
