@@ -23,4 +23,7 @@ urlpatterns = [
     path('', include('app_market.urls')),
     path('', include('app_users.urls')),
     path('i18n', include('django.conf.urls.i18n')),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
